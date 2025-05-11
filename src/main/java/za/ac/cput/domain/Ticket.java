@@ -9,12 +9,10 @@ public class Ticket {
     private String visitorID;
     private String exhibitionID;
     private Date purchaseDate;
-    private String ticketType; // e.g., adult, child
+    private String ticketType; 
     private double price;
-    private LocalDate expiryDate; // e.g., one-time, recurring
+    private LocalDate expiryDate; 
 
-
-    // Constructor using Builder
 
     public Ticket(Builder builder) {
         this.ticketID = builder.ticketID;
