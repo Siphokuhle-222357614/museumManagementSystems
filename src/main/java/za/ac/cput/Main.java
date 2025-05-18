@@ -7,7 +7,7 @@ import za.ac.cput.domain.Museum;
 public class Main {
     public static void main(String[] args) {
         Museum museum = new Museum.Builder()
-                .setMuseumId(1L)
+                .setMuseumId()
                 .setMuseumName("The Louvre")
                 .setAddress("Rue de Frivolity")
                 .setCity("Paris")
@@ -20,6 +20,6 @@ public class Main {
                 .setMuseumType("Art Museum")
                 .setOperatingHours("9:00 AM - 6:00 PM, closed on Tuesdays")
                 .setDescription("World's largest art museum and historic monument")
-                .build();;
+                .build();
     }
 }

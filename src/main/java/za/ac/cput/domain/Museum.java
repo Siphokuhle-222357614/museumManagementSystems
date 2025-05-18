@@ -14,68 +14,85 @@ public class Museum {
     private String museumType;
     private String operatingHours;
     private String description;
+    private int capacity;
 
     public Museum() {
 
     }
 
     public Long getMuseumId() {
+
         return museumId;
     }
 
 
     public String getMuseumName() {
+
         return museumName;
     }
 
 
     public String getAddress() {
+
         return address;
     }
 
 
     public String getCity() {
+
         return city;
     }
 
 
     public String getProvince() {
+
         return province;
     }
 
 
     public short getPostalCode() {
+
         return postalCode;
     }
 
     public String getCountry() {
+
         return country;
     }
 
 
     public short getPhoneNumber() {
+
         return phoneNumber;
     }
 
 
     public String getEmail() {
+
         return email;
     }
 
 
     public String getWebsite() {
+
         return website;
     }
 
 
 
     public String getMuseumType() {
+
         return museumType;
     }
 
 
     public String getOperatingHours() {
+
         return operatingHours;
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
 
 
@@ -98,6 +115,7 @@ public class Museum {
         museumType = builder.museumType;
         operatingHours = builder.operatingHours;
         description = builder.description;
+        capacity = builder.capacity;
     }
 
     public static class Builder {
@@ -114,57 +132,75 @@ public class Museum {
         private String museumType;
         private String operatingHours;
         private String description;
+        private int capacity;
 
         public void setMuseumId(Long museumId) {
+
             this.museumId = museumId;
         }
 
         public void setMuseumName(String museumName) {
+
             this.museumName = museumName;
         }
 
         public void setAddress(String address) {
+
             this.address = address;
         }
 
         public void setCity(String city) {
+
             this.city = city;
         }
 
         public void setProvince(String province) {
+
             this.province = province;
         }
 
         public void setPostalCode(short postalCode) {
+
             this.postalCode = postalCode;
         }
 
         public void setCountry(String country) {
+
             this.country = country;
         }
 
         public void setPhoneNumber(short phoneNumber) {
+
             this.phoneNumber = phoneNumber;
         }
 
         public void setEmail(String email) {
+
             this.email = email;
         }
 
         public void setWebsite(String website) {
+
             this.website = website;
         }
 
         public void setMuseumType(String museumType) {
+
             this.museumType = museumType;
         }
 
         public void setOperatingHours(String operatingHours) {
+
             this.operatingHours = operatingHours;
         }
 
         public void setDescription(String description) {
+
             this.description = description;
+        }
+
+        public void setCapacity(int capacity) {
+            this.capacity = capacity;
         }
 
         public Museum build() {
@@ -188,6 +224,7 @@ public class Museum {
                 ", museumType='" + museumType + '\'' +
                 ", operatingHours='" + operatingHours + '\'' +
                 ", description='" + description + '\'' +
+                ", capacity='" + capacity + '\'' +
                 '}';
     }
 }
