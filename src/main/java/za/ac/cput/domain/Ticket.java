@@ -1,4 +1,4 @@
-package za.ac.cput.domain; // Change this to your actual package name
+package za.ac.cput.domain;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -9,17 +9,15 @@ public class Ticket {
     private String visitorID;
     private String exhibitionID;
     private Date purchaseDate;
-    private String ticketType; 
+    private String ticketType;
     private double price;
-    private LocalDate expiryDate; 
-
+    private LocalDate expiryDate;
 
     public Ticket(Builder builder) {
         this.ticketID = builder.ticketID;
         this.visitorID = builder.visitorID;
         this.exhibitionID = builder.exhibitionID;
         this.purchaseDate = builder.purchaseDate;
-
         this.ticketType = builder.ticketType;
         this.price = builder.price;
         this.expiryDate = builder.expiryDate;
@@ -50,7 +48,7 @@ public class Ticket {
         return price;
     }
 
-    public LocalDate getexpiryDate() {
+    public LocalDate getExpiryDate() {
         return expiryDate;
     }
 
@@ -63,7 +61,7 @@ public class Ticket {
                 ", purchaseDate=" + purchaseDate +
                 ", ticketType='" + ticketType + '\'' +
                 ", price=" + price +
-                ", expiryDate='" + expiryDate + '\'' +
+                ", expiryDate=" + expiryDate +
                 '}';
     }
 
@@ -107,13 +105,12 @@ public class Ticket {
             return this;
         }
 
-        public Builder setFrequency(String frequency) {
+        public Builder setExpiryDate(LocalDate expiryDate) {
             this.expiryDate = expiryDate;
             return this;
         }
 
         public Ticket build() {
-
             return new Ticket(this);
         }
     }
