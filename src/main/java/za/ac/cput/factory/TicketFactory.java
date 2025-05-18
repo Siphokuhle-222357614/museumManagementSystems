@@ -1,5 +1,4 @@
 package za.ac.cput.factory;
-
 import za.ac.cput.domain.Ticket;
 
 import java.time.LocalDate;

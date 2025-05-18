@@ -8,6 +8,7 @@ public class Payment {
 
     private Payment(Builder builder) {
         this.paymentID = builder.paymentID;
+
         this.paymentMethod = builder.paymentMethod;
         this.amount = builder.amount;
         this.status = builder.date;

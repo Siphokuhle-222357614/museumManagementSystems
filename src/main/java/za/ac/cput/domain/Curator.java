@@ -1,7 +1,6 @@
 /*Aunthor: Bonke Bulana - 220539995
  * Due Date: 28-03-25*/
 package za.ac.cput.domain;
-
 import java.time.LocalDate;
 
 public class Curator {
